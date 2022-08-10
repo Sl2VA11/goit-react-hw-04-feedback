@@ -1,0 +1,24 @@
+.btn{
+   width: 100px;
+   height: 30px;
+  background-color: orange;
+   border: 1px solid black;
+   border-radius: 10px;
+   cursor: pointer;
+ 
+}
+
+.feedbackRatingsWrap{
+   display: flex;
+   align-items: center;
+   
+}
+.feedbackRatings{
+   margin-right: 30px;
+}
+.btnDecrement{
+   width: 40px;
+   height: 30px;
+   border: 1px solid black;
+   cursor: pointer;
+}
