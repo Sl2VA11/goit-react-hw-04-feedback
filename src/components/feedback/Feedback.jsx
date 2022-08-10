@@ -1,4 +1,4 @@
-import { Component, useState } from 'react';
+import {  useState } from 'react';
 import Statistics from '../Statistics/Statistics';
 import FeedbackOptions from './FeedbackOptions';
 import Section from '../Section/Section';
@@ -25,6 +25,9 @@ export function Feedback() {
       case 'bad':
         setBad(bad + 1);
         break;
+
+      default:
+        return;
     }
   };
 
@@ -39,6 +42,9 @@ export function Feedback() {
       case 'bad':
         setBad(bad - 1);
         break;
+
+      default:
+        return;
     }
   };
  
