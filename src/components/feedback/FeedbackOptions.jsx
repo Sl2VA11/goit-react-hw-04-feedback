@@ -1,6 +1,8 @@
 import css from './Feedback.module.css';
+import propTypes from 'prop-types';
 
 export default function FeedbackOptions({ onLeaveFeedback, options }) {
+  console.log(typeof options);
   return (
     <div>
       {Object.keys(options).map(option => {
@@ -19,3 +21,7 @@ export default function FeedbackOptions({ onLeaveFeedback, options }) {
   );
 }
 
+FeedbackOptions.propTypes = {
+  onLeaveFeedback: propTypes.func,
+  options: propTypes.object
+};
